@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb, white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 320px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            font-size: 26px;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        button {
+            width: 86%;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 16px;
+            background-color: #ff6a00;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover {
+            background-color: #e65c00;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffe6c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>✨ BMI Calculator ✨</h2>
+        <form method="POST">
+            <input type="number" step="0.1" name="weight" placeholder="Enter Weight (kg)" required><br>
+            <input type="number" step="0.01" name="height" placeholder="Enter Height (m)" required><br>
+            <button type="submit">Calculate BMI</button>
+        </form>
+
+        {% if result %}
+        <p>{{ result }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
