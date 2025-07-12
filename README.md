@@ -49,3 +49,27 @@ cpp
 Copy
 Edit
 http://127.0.0.1:5000
+📸 Screenshots:
+🔹 Web App Interface
+
+🔹 Terminal Output in VS Code
+![Flask CLI](bmi_cli_output.png)
+✅ Outcome:
+A simple and interactive BMI calculator web app that helps users check their fitness level based on weight and height inputs.
+
+📁 Folder Structure:
+pgsql
+Copy
+Edit
+OIBSIP_Python_Programming_Task2/
+├── app.py
+├── templates/
+│   └── index.html
+├── bmi_calculator_ui.png
+├── bmi_flask_server_output.png
+└── README.md
+🧑‍💻 Author:
+Pavani Chalapadi
+Python Programming Intern – Oasis Infobyte (OIBSIP)
+
+#OasisInfobyte #PythonProgramming #BMIcalculator #FlaskApp #Internship #LearningByDoing
